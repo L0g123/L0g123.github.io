@@ -29,15 +29,14 @@ body, html {height: 100%}
 
 
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-row-padding">
-    <div class="w3-col s4">
-      <h3>amoung us</h3>
+    <div class="w3-sidebar w3-black w3-text-white w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-light-gray">Home</a>
+      <a href="aboutme.html" class="w3-bar-item w3-button w3-hover-light-gray">About Me</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Projects</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Operating system</a>
+      </div>
     </div>
-    <div class="w3-col s4">
-      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/capsule_616x353.jpg" style="width:100%">
-    </div>
-  </div>
 </div>
 
 <script>
