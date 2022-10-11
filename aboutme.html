@@ -18,38 +18,6 @@ body, html {height: 100%}
 </style>
 </head>
 <body>
-<div class="w3-center w3-black">
-    <div class="w3-bar w3-border w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-hover-light-gray">Home</a>
-        <a href="aboutme.html" class="w3-bar-item w3-button w3-hover-light-gray">About Me</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Projects</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Operating system</a>
-      </div>
-</div>
-
-<div class="w3-content w3-section" style="max-width:500px">
-    <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" style="width:100%">
-    <img class="mySlides" src="https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70" style="width:100%">
-    <img class="mySlides" src="https://opensource.com/sites/default/files/lead-images/tux_linux_penguin_code_binary.jpg" style="width:100%">
-</div>
-  
-  <script>
-  var myIndex = 0;
-  carousel();
-  
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
-  </script>
-  
 
 </body>
 </html>
