@@ -1,53 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>L0g_'s website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://www.researchgate.net/publication/283045391/figure/fig2/AS:614009514516480@1523402684300/Richard-Stallman-in-Oslo-in-2009-as-Saint-IGNUcius-saint-in-the-Church-of-Emacs.png');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-light-gray">Home</a>
-    <a href="aboutme.html" class="w3-bar-item w3-button w3-hover-light-gray">About Me</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Projects</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-light-gray">Operating system</a>
-    </div>
-  </div>
-
-
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
- <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="aboutme.html" class="w3-bar-item w3-button">about me</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  </div>
-</div>
-
-
-<script>
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-  </script>
+  <script>
+    $('body').terminal({
+        help: function() {
+            this.echo('ls - list files\n\ncat {file name here} - shows the content of the file\n\nNOTE NONE OF THIS WORKS YET PLZ ONLY LS DOES KINDA');
+        },
+        ls: function() {
+          this.echo('whoami.txt')
+        }
+    }, {
+        greetings: 'running L0g_0s version 6.9.420\nloading enviroment...\ntype help for help'
+    });
+    </script>
 </body>
 </html>
-
